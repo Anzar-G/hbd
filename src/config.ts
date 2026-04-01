@@ -16,7 +16,7 @@ export const CONFIG = {
     hero: {
         title: "Untuk Ociii,",
         subtitle: "A Letter From My Heart",
-        image: "/hero-photo.jpg"
+        image: "hero-photo.jpg"
     },
 
     // GREETING SECTION
@@ -32,7 +32,7 @@ export const CONFIG = {
             "Jujur, saat pertama kali Umi memperkenalkanku padamu, mungkin sikapku terasa dingin dan acuh. Namun dalam diam, aku terus bercermin dan memantapkan diri. Kini aku sadar sepenuhnya, bahwa kamulah jawaban yang kunanti. Di waktu yang tepat ini, aku telah menjatuhkan pilihanku: kamulah satu-satunya pendamping hidupku, cukup sekali ini, hingga maut memisahkan kita.",
             "Pertemuan pertama kita mungkin berlalu tanpa getaran yang berarti. Namun, kepulanganku justru membawa kesadaran baru. Jauh darimu membuatku mengerti bahwa sosok yang kucari selama ini ada pada dirimu. Kini aku yakin, Adek adalah takdir yang ingin Abang jaga sampai akhir."
         ],
-        images: ["/moment1.jpg", "/moment2.jpg"],
+        images: ["moment1.jpg", "moment2.jpg"],
         highlightQuote: "Satu nama, satu pilihan, satu selamanya. Terima kasih telah menjadi akhir dari pencarianku."
     },
 
@@ -59,11 +59,11 @@ export const CONFIG = {
 
     // ASSETS
     assets: {
-        music: "/bgm.mp3",
-        backgroundVideo: "/background.mp4",
+        music: "bgm.mp3",
+        backgroundVideo: "background.mp4",
         images: {
-            lilyMain: "/lily1.png",
-            lilySide: "/lily2.png"
+            lilyMain: "lily1.png",
+            lilySide: "lily2.png"
         }
     }
 };
