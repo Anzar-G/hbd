@@ -1,0 +1,50 @@
+FORMULIR DATA EDIT WEB SURAT CINTA 🌷
+====================================
+(Silakan isi data di bawah ini dan berikan kembali ke saya)
+
+1. INFO DASAR
+-------------
+Nama Penerima (Panggilan): 
+Nama Pengirim: 
+Tanggal Spesial: 
+
+2. HALAMAN AWAL (SEBELUM DIBUKA)
+-------------------------------
+Judul Atas (Contoh: Happy Valentine's Day): 
+Teks Pembuka (Contoh: A special letter for): 
+Moto/Subtitle Singkat: 
+
+3. HERO (HALAMAN DEPAN)
+-----------------------
+Judul Hero (Contoh: Untuk Eli): 
+Subtitle Hero (Contoh: A letter from my heart): 
+
+4. greeting (SAPAAN AWAL)
+-------------------------
+Sapaan (Contoh: Hai sayang,): 
+Isi Sapaan (Ceritakan perasaan awalmu): 
+
+5. MOMEN KITA (KENANGAN)
+------------------------
+Judul Momen (Contoh: Momen Kita): 
+Cerita Kenangan 1 (Contoh: Main game bareng, dll): 
+Cerita Kenangan 2: 
+Kalimat Quotes Momen (Yang paling berkesan): 
+
+6. ISI SURAT CINTA
+------------------
+Isi Surat Paragraf 1: 
+Isi Surat Paragraf 2: 
+Kalimat Quotes Dramatis (Yang muncul di tengah): 
+Harapan ke Depan (Contoh: Sampai ke altar, dll): 
+
+7. PENUTUP & TANDA TANGAN
+-------------------------
+Pesan Penutup Terakhir: 
+Teks Tanda Tangan (Contoh: With all my love 💐): 
+
+8. MEDIA (OPSIONAL)
+-------------------
+Judul Lagu (Untuk BGM): 
+Link/File Video/GIF (Jika ingin ganti): 
+Warna Tema (Contoh: Nuansa Pink, Biru, Hijau, dll): 

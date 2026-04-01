@@ -1,0 +1,291 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Coffee × Blue × Pink Palette ── */
+  --color-bg: #13100d;
+  /* Espresso dark */
+  --color-bg-alt: #1c1612;
+  /* Dark roast */
+  --color-bg-section: #221a14;
+  /* Warm mahogany */
+  --color-cream: #fdf6ee;
+  /* Latte foam */
+  --color-dusty-rose: #d98aac;
+  /* Romantic pink */
+  --color-sage: #7ab0d4;
+  /* Soft blue accent */
+  --color-gold: #c9944a;
+  /* Caramel/coffee gold */
+  --color-lily-white: #fdf3e7;
+  --color-lily-pink: #f0d5e0;
+
+  /* Fonts */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Lora", serif;
+  --font-script: "Dancing Script", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  /* Espresso base — pink glow bottom, VIVID blue glow top-right */
+  background:
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(94, 174, 227, 0.18) 0%, transparent 65%),
+    radial-gradient(ellipse 80% 55% at 50% 110%, rgba(217, 138, 172, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 0% 50%, rgba(94, 174, 227, 0.10) 0%, transparent 70%),
+    linear-gradient(180deg, #13100d 0%, #1c1612 50%, #221a14 100%);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Lily bloom keyframes */
+@keyframes lily-bloom {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@keyframes lily-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(105vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes steam-rise {
+  0% {
+    transform: translateY(20px) translateX(0) scaleX(1);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateY(-30vh) translateX(12px) scaleX(1.15);
+    opacity: 0.5;
+  }
+
+  85% {
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translateY(-70vh) translateX(-8px) scaleX(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes ring-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes equalizer-bar {
+
+  50% {
+    height: 16px;
+  }
+}
+
+@keyframes pan-slow {
+  0% {
+    transform: scale(1.1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.2) translate(-2%, -2%);
+  }
+}
+
+/* Utilities */
+.bg-radial-gradient {
+  background: radial-gradient(var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to));
+}
+
+/* Dynamic Layout Utilities */
+.staggered-card {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.staggered-card:nth-child(even) {
+  transform: translateY(40px);
+}
+
+@media (min-width: 768px) {
+  .staggered-card:nth-child(even) {
+    transform: translateY(120px);
+  }
+
+  .staggered-card:nth-child(odd) {
+    transform: translateY(0);
+  }
+}
+
+.mask-soft-bottom {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.mask-soft-top {
+  mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 70%, transparent 100%);
+}
+
+.parallax-bg {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-lora {
+  font-family: "Lora", serif;
+}
+
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-sage {
+  color: var(--color-sage);
+}
+
+.text-dusty-rose {
+  color: var(--color-dusty-rose);
+}
+
+.text-cream {
+  color: var(--color-cream);
+}
+
+.bg-bg {
+  background-color: var(--color-bg);
+}
+
+/* Letter paper / surat cinta aesthetic */
+.letter-paper {
+  background: linear-gradient(135deg, rgba(253, 246, 238, 0.03) 0%, rgba(253, 246, 238, 0.015) 100%);
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+  position: relative;
+  border-left: 3px solid rgba(217, 138, 172, 0.30);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(217, 138, 172, 0.06);
+}
+
+@media (min-width: 640px) {
+  .letter-paper {
+    padding: 2.5rem 3rem;
+    border-left-width: 3px;
+  }
+}
+
+/* Drop cap — huruf pertama besar seperti surat klasik */
+.drop-cap::first-letter {
+  float: left;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-right: 0.35rem;
+  margin-top: -0.1em;
+  color: rgba(217, 138, 172, 0.90);
+}
+
+/* Ornamental quotes */
+.ornamental-quote-open,
+.ornamental-quote-close {
+  font-size: 2.5em;
+  line-height: 0;
+  vertical-align: middle;
+  color: rgba(201, 160, 160, 0.4);
+  margin: 0 0.2rem;
+  font-family: serif;
+}
+
+.ornamental-quote-open {
+  vertical-align: -0.4em;
+}
+
+.ornamental-quote-close {
+  vertical-align: -0.4em;
+}
