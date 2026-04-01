@@ -1,7 +1,7 @@
 export const CONFIG = {
     recipientName: "Syarifah Yossy Maharani",
     senderName: "Said Ridwan A",
-    eventDate: "01 Maret 2003",
+    eventDate: "01 April 2003",
 
     // WELCOME MODAL
     welcome: {
