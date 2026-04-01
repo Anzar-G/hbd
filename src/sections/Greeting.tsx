@@ -27,8 +27,7 @@ export function Greeting() {
           <div className="md:col-span-5 relative">
             <ScrollReveal variant="fade-right" delay={150}>
               <h2
-                className="text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] leading-[0.9] text-dusty-rose mb-8 -rotate-1 md:-rotate-2"
-                style={{ fontFamily: '"Cormorant Garamond", serif', fontStyle: 'italic', fontWeight: 600 }}
+                className="text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] leading-[0.9] text-dusty-rose mb-8 -rotate-1 md:-rotate-2 font-heading italic font-semibold"
               >
                 {CONFIG.greeting.title}
               </h2>
@@ -43,10 +42,9 @@ export function Greeting() {
           {/* Right: Body Text with Card Aesthetic */}
           <div className="md:col-span-7 md:pl-12 relative">
             <ScrollReveal variant="fade-left" delay={300}>
-              <div className="relative p-8 md:p-14 bg-white/[0.02] border border-white/5 rounded-3xl shadow-[0_32px_64px_-16px_rgba(0,0,0,0.4)] backdrop-blur-sm -rotate-1 md:rotate-1">
+              <div className="relative p-8 md:p-14 bg-white/2 border border-white/5 rounded-3xl shadow-[0_32px_64px_-16px_rgba(0,0,0,0.4)] backdrop-blur-sm -rotate-1 md:rotate-1">
                 <p
-                  className="text-cream/80 text-[1rem] md:text-[1.125rem] leading-loose"
-                  style={{ fontFamily: '"Lora", serif' }}
+                  className="text-cream/80 text-[1rem] md:text-[1.125rem] leading-loose font-lora"
                 >
                   {CONFIG.greeting.text}
                 </p>

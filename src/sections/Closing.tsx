@@ -71,8 +71,7 @@ export function Closing() {
         {/* Closing text — Increased Line Height and Italic */}
         <ScrollReveal variant="fade-up" delay={250}>
           <p
-            className="text-cream/80 text-[1.1rem] md:text-[1.25rem] leading-loose mt-12 mb-16 italic"
-            style={{ fontFamily: '"Lora", serif' }}
+            className="text-cream/80 text-[1.1rem] md:text-[1.25rem] leading-loose mt-12 mb-16 italic font-lora"
           >
             {CONFIG.closing.text}
           </p>
@@ -83,8 +82,7 @@ export function Closing() {
           <div className="inline-flex flex-col items-center gap-4 group">
             {/* Signature with improved flourish */}
             <p
-              className="text-dusty-rose text-3xl sm:text-4xl md:text-5xl"
-              style={{ fontFamily: '"Dancing Script", cursive' }}
+              className="text-dusty-rose text-3xl sm:text-4xl md:text-5xl font-dancing"
             >
               {CONFIG.closing.signature}
             </p>
@@ -92,7 +90,7 @@ export function Closing() {
             {/* Artistic Underline — Wider and more nuanced */}
             <div className="relative w-48 h-px">
               <div
-                className="absolute inset-0 bg-linear-to-r from-transparent via-gold/40 to-transparent transition-all duration-[1500ms] ease-out"
+                className="absolute inset-0 bg-linear-to-r from-transparent via-gold/40 to-transparent transition-all duration-1500 ease-out"
                 style={{ width: `${underlineWidth}%`, left: `${(100 - underlineWidth) / 2}%` }}
               />
               <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-gold/10 rounded-full blur-[2px]" />

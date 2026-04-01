@@ -57,8 +57,7 @@ export function LoveLetter() {
               {CONFIG.loveLetter.paragraphs.map((p, i) => (
                 <ScrollReveal key={i} variant="fade-up" delay={i * 120}>
                   <p
-                    className={`${i === 0 ? 'drop-cap' : ''} text-cream/85 text-[1rem] md:text-[1.1rem] leading-loose mb-10`}
-                    style={{ fontFamily: '"Lora", serif' }}
+                    className={`${i === 0 ? 'drop-cap' : ''} text-cream/85 text-[1rem] md:text-[1.1rem] leading-loose mb-10 font-lora`}
                   >
                     {p}
                   </p>
@@ -75,8 +74,7 @@ export function LoveLetter() {
                   {quoteVisible && (
                     <ScrollReveal variant="scale-up" delay={0}>
                       <p
-                        className="text-dusty-rose text-2xl md:text-4xl leading-relaxed font-medium"
-                        style={{ fontFamily: '"Dancing Script", cursive' }}
+                        className="text-dusty-rose text-2xl md:text-4xl leading-relaxed font-medium font-dancing"
                       >
                         &ldquo;{CONFIG.loveLetter.dramaticQuote}&rdquo;
                       </p>
@@ -92,8 +90,7 @@ export function LoveLetter() {
               {/* Final paragraph */}
               <ScrollReveal variant="fade-up" delay={0}>
                 <p
-                  className="text-cream/85 text-[1rem] md:text-[1.1rem] leading-loose"
-                  style={{ fontFamily: '"Lora", serif' }}
+                  className="text-cream/85 text-[1rem] md:text-[1.1rem] leading-loose font-lora"
                 >
                   {CONFIG.loveLetter.finalParagraph}
                 </p>
@@ -103,8 +100,7 @@ export function LoveLetter() {
               <ScrollReveal variant="fade-in" delay={200}>
                 <div className="mt-14 pt-8 border-t border-white/5 flex flex-col items-end">
                   <p
-                    className="text-dusty-rose text-2xl md:text-3xl relative"
-                    style={{ fontFamily: '"Dancing Script", cursive' }}
+                    className="text-dusty-rose text-2xl md:text-3xl relative font-dancing"
                   >
                     — {CONFIG.senderName}
                     <span className="absolute -bottom-2 right-0 w-full h-px bg-dusty-rose/40 scale-x-0 origin-left transition-transform duration-700 group-hover:scale-x-100" />

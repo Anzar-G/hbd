@@ -193,13 +193,43 @@ body {
 }
 
 .mask-soft-bottom {
-  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 .mask-soft-top {
-  mask-image: linear-gradient(to top, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  mask-image: linear-gradient(to top, black 70%, transparent 100%);
+}
+
+/* Background Orb Utilities */
+.orb-blue-vivid {
+  background: radial-gradient(circle, rgba(94, 174, 227, 0.22) 0%, transparent 65%);
+  filter: blur(50px);
+}
+
+.orb-blue-soft {
+  background: radial-gradient(circle, rgba(94, 174, 227, 0.14) 0%, transparent 70%);
+  filter: blur(55px);
+}
+
+.orb-pink-vivid {
+  background: radial-gradient(circle, rgba(217, 138, 172, 0.15) 0%, transparent 70%);
+  filter: blur(50px);
+}
+
+.orb-pink-soft {
+  background: radial-gradient(circle, rgba(217, 138, 172, 0.10) 0%, transparent 70%);
+  filter: blur(50px);
+}
+
+.orb-caramel {
+  background: radial-gradient(circle, rgba(201, 148, 74, 0.10) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.vignette-main {
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(19, 16, 13, 0.45) 100%);
 }
 
 .parallax-bg {

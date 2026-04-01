@@ -8,11 +8,9 @@ export function Hero() {
       {CONFIG.hero.image && (
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none mask-soft-bottom">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center opacity-15 grayscale-30 brightness-60 contrast-110"
             style={{
               backgroundImage: `url(${CONFIG.hero.image})`,
-              opacity: 0.15,
-              filter: 'brightness(0.6) contrast(1.1) grayscale(30%)',
               animation: 'pan-slow 60s linear infinite alternate'
             }}
           />
@@ -76,7 +74,7 @@ export function Hero() {
                 <img
                   src={CONFIG.hero.image}
                   alt="Hero focal"
-                  className="w-full h-full object-cover grayscale-[20%] brightness-90 transition-all duration-700 hover:grayscale-0 hover:scale-105"
+                  className="w-full h-full object-cover grayscale-20 brightness-90 transition-all duration-700 hover:grayscale-0 hover:scale-105"
                 />
               </div>
               <div className="mt-4 flex justify-center">

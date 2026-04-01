@@ -7,14 +7,12 @@ function getRandom(min: number, max: number) {
 // Coffee bean SVG — simple oval with a crease line
 function CoffeeBean({ style }: { style: React.CSSProperties }) {
     return (
-        <svg viewBox="0 0 24 32" className="absolute" style={style}>
-            <ellipse cx="12" cy="16" rx="10" ry="15" fill="currentColor" />
+        <svg viewBox="0 0 24 32" className="absolute fill-current text-[var(--bean-color)]" style={style}>
+            <ellipse cx="12" cy="16" rx="10" ry="15" />
             {/* crease line in the middle */}
             <path
                 d="M12 4 Q8 16 12 28"
-                stroke="rgba(0,0,0,0.25)"
-                strokeWidth="2"
-                fill="none"
+                className="stroke-black/25 fill-none stroke-[2] stroke-round"
                 strokeLinecap="round"
             />
         </svg>
@@ -24,14 +22,10 @@ function CoffeeBean({ style }: { style: React.CSSProperties }) {
 // Steam wisp — curvy vertical line
 function SteamWisp({ style }: { style: React.CSSProperties }) {
     return (
-        <svg viewBox="0 0 20 60" className="absolute" style={style}>
+        <svg viewBox="0 0 20 60" className="absolute stroke-current text-[var(--steam-color)] opacity-60" style={style}>
             <path
                 d="M10 55 Q4 45 10 35 Q16 25 10 15 Q4 5 10 0"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                fill="none"
-                strokeLinecap="round"
-                opacity="0.6"
+                className="fill-none stroke-[2.5] stroke-round"
             />
         </svg>
     )
@@ -90,12 +84,12 @@ export function FloatingCoffee() {
                             left: `${el.left}%`,
                             width: `${el.size}px`,
                             height: `${el.size * 1.4}px`,
-                            color: el.color,
+                            '--bean-color': el.color,
                             animation: `petal-fall ${el.duration}s linear infinite`,
                             animationDelay: `${el.delay}s`,
                             transform: `rotate(${el.rotation}deg)`,
                             willChange: 'transform',
-                        }}
+                        } as React.CSSProperties}
                     />
                 ) : (
                     <SteamWisp
@@ -104,11 +98,11 @@ export function FloatingCoffee() {
                             left: `${el.left}%`,
                             width: `${el.width}px`,
                             height: `${el.height}px`,
-                            color: el.color,
+                            '--steam-color': el.color,
                             animation: `steam-rise ${el.duration}s ease-in-out infinite`,
                             animationDelay: `${el.delay}s`,
                             willChange: 'transform, opacity',
-                        }}
+                        } as React.CSSProperties}
                     />
                 )
             )}

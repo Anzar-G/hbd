@@ -39,19 +39,14 @@ export function MusicPlayer({ audioRef }: MusicPlayerProps) {
 
   return (
     <div
-      className="fixed z-40 flex items-center gap-2"
-      style={{
-        bottom: 'max(1.5rem, env(safe-area-inset-bottom))',
-        right: 'max(1.5rem, env(safe-area-inset-right))',
-      }}
+      className="fixed z-40 flex items-center gap-2 bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Tooltip */}
       {isHovered && (
         <span
-          className="absolute right-full mr-3 whitespace-nowrap px-3 py-1.5 rounded text-[0.75rem] font-lora italic text-[#f5f0e8] border border-[rgba(201,160,160,0.3)] bg-[rgba(10,10,15,0.8)] backdrop-blur-sm transition-opacity duration-300 hidden sm:block"
-          style={{ opacity: isHovered ? 1 : 0 }}
+          className={`absolute right-full mr-3 whitespace-nowrap px-3 py-1.5 rounded text-[0.75rem] font-lora italic text-cream border border-[rgba(201,160,160,0.3)] bg-[rgba(10,10,15,0.8)] backdrop-blur-sm transition-opacity duration-300 hidden sm:block ${isHovered ? 'opacity-100' : 'opacity-0'}`}
         >
           {isPlaying ? 'Now Playing' : 'Play Music'}
         </span>
@@ -78,7 +73,7 @@ export function MusicPlayer({ audioRef }: MusicPlayerProps) {
       <button
         type="button"
         onClick={togglePlay}
-        className="relative flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[rgba(10,10,15,0.7)] backdrop-blur-md border border-[rgba(201,160,160,0.3)] text-[#f5f0e8] cursor-pointer transition-all duration-300 ease-out hover:border-[rgba(201,160,160,0.6)] hover:shadow-[0_0_12px_rgba(201,160,160,0.2)]"
+        className="relative flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[rgba(10,10,15,0.7)] backdrop-blur-md border border-[rgba(201,160,160,0.3)] text-cream cursor-pointer transition-all duration-300 ease-out hover:border-[rgba(201,160,160,0.6)] hover:shadow-[0_0_12px_rgba(201,160,160,0.2)]"
         aria-label={isPlaying ? 'Pause music' : 'Play music'}
       >
         {isPlaying && (

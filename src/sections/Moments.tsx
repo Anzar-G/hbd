@@ -53,8 +53,7 @@ export function Moments() {
                 {/* Text Content */}
                 <div className="px-4">
                   <p
-                    className="text-cream/80 text-[1rem] leading-loose italic"
-                    style={{ fontFamily: '"Lora", serif' }}
+                    className="text-cream/80 text-[1rem] leading-loose italic font-lora"
                   >
                     {p}
                   </p>
@@ -70,8 +69,7 @@ export function Moments() {
             <div className="max-w-xl relative">
               <span className="absolute -top-12 -left-8 text-[8rem] text-gold/5 font-serif pointer-events-none select-none">“</span>
               <p
-                className="text-dusty-rose text-2xl md:text-3xl leading-relaxed italic relative z-10"
-                style={{ fontFamily: '"Dancing Script", cursive' }}
+                className="text-dusty-rose text-2xl md:text-3xl leading-relaxed italic relative z-10 font-dancing"
               >
                 {CONFIG.moments.highlightQuote}
               </p>
