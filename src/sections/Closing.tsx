@@ -47,6 +47,8 @@ export function Closing() {
 
   return (
     <section ref={closingRef} className="relative z-10 py-32 md:py-48 px-6 md:px-12 overflow-hidden mask-soft-top">
+      {/* Top Transition Fade */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-bg to-transparent pointer-events-none z-20" />
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-dusty-rose/5 rounded-full blur-[100px] pointer-events-none" />
 

@@ -4,6 +4,8 @@ import { CONFIG } from '../config'
 export function Greeting() {
   return (
     <section className="relative z-10 py-24 md:py-40 px-6 md:px-12 overflow-hidden">
+      {/* Top Transition Fade — Seamless from Hero */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-bg to-transparent pointer-events-none z-20" />
       <div className="max-w-6xl mx-auto relative">
 
         {/* Floating Decorative Elements — Overlapping boundaries */}
@@ -57,6 +59,8 @@ export function Greeting() {
           </div>
         </div>
       </div>
+      {/* Bottom Transition Fade — Smooth to next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-bg to-transparent pointer-events-none z-20" />
     </section>
   )
 }

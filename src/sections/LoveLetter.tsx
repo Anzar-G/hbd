@@ -17,6 +17,8 @@ export function LoveLetter() {
 
   return (
     <section className="relative z-10 py-24 md:py-40 px-6 md:px-12 overflow-hidden">
+      {/* Top Transition Fade */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-bg to-transparent pointer-events-none z-20" />
       {/* Dynamic Background Accents */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-gold/5 rounded-full blur-[120px] pointer-events-none opacity-40 translate-x-12" />
       <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-dusty-rose/5 rounded-full blur-[120px] pointer-events-none opacity-40 -translate-x-12" />
@@ -111,6 +113,8 @@ export function LoveLetter() {
           </div>
         </div>
       </div>
+      {/* Bottom Transition Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-bg to-transparent pointer-events-none z-20" />
     </section>
   )
 }

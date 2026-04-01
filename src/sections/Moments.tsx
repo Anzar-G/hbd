@@ -4,6 +4,8 @@ import { CONFIG } from '../config'
 export function Moments() {
   return (
     <section className="relative z-10 py-24 md:py-40 px-6 md:px-12 overflow-hidden">
+      {/* Top Transition Fade */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-bg to-transparent pointer-events-none z-20" />
       {/* Decorative vertical line spanning from previous section */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-linear-to-b from-transparent via-gold/15 to-transparent" />
 
@@ -78,6 +80,8 @@ export function Moments() {
           </div>
         </ScrollReveal>
       </div>
+      {/* Bottom Transition Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-bg to-transparent pointer-events-none z-20" />
     </section>
   )
 }
